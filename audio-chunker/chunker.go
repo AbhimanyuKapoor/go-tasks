@@ -32,7 +32,6 @@ func SplitAudio(input string, chunkDir string) ([]string, error) {
 		cmd := exec.Command("ffmpeg", "-y", "-ss", strconv.FormatFloat(start, 'f', 2, 64),
 			"-i", input,
 			"-t", "5",
-			"-c", "copy",
 			outputFile)
 
 		err := cmd.Run()
