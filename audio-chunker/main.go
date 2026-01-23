@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	input := filepath.Join("input", "example.wav")
+	input := filepath.Join("input", "normalized.wav")
 	outputDir := "output"
 
 	paths, err := SplitAudio(input, outputDir)
